@@ -261,19 +261,19 @@
 
             <form method="POST" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-end bg-slate-50 p-5 rounded-xl border border-slate-200">
                 <div class="lg:col-span-2">
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Function Expression $f(x)$</label>
+                    <label class="block text-xs font-bold tracking-wider text-slate-600 mb-1">Function Expression $f(x)$</label>
                     <input type="text" name="expr" placeholder="e.g., x^3 - x - 1" 
                            value="{{ result.inputs.expr if result and result.inputs else 'x^3 - x - 1' }}" required
                            class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Initial Guess $x_a$</label>
+                    <label class="block text-xs font-bold tracking-wider text-slate-600 mb-1">Initial Guess $x_a$</label>
                     <input type="number" step="any" name="x_a" 
                            value="{{ result.inputs.x_a if result and result.inputs else '1.0' }}" required
                            class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Second Guess $x_b$</label>
+                    <label class="block text-xs font-bold tracking-wider text-slate-600 mb-1">Second Guess $x_b$</label>
                     <input type="number" step="any" name="x_b" 
                            value="{{ result.inputs.x_b if result and result.inputs else '2.0' }}" required
                            class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
